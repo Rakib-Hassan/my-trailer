@@ -1,0 +1,703 @@
+@font-face {
+    font-family: 'RubikRegular';
+    src: url('../fonts/RubikRegular/fonts/RubikRegular.eot');
+    src: url('../fonts/RubikRegular/fonts/RubikRegular.eot') format('embedded-opentype'), url('../fonts/RubikRegular/fonts/RubikRegular.woff2') format('woff2'), url('../fonts/RubikRegular/fonts/RubikRegular.woff') format('woff'), url('../fonts/RubikRegular/fonts/RubikRegular.ttf') format('truetype'), url('../fonts/RubikRegular/fonts/RubikRegular.svg#RubikRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'RubikMedium';
+    src: url('../fonts/RubikMedium/fonts/RubikMedium.eot');
+    src: url('../fonts/RubikMedium/fonts/RubikMedium.eot') format('embedded-opentype'), url('../fonts/RubikMedium/fonts/RubikMedium.woff2') format('woff2'), url('../fonts/RubikMedium/fonts/RubikMedium.woff') format('woff'), url('../fonts/RubikMedium/fonts/RubikMedium.ttf') format('truetype'), url('../fonts/RubikMedium/fonts/RubikMedium.svg#RubikMedium') format('svg');
+}
+
+@font-face {
+    font-family: 'Cambria';
+    src: url('../fonts/Cambria/fonts/Cambria.eot');
+    src: url('../fonts/Cambria/fonts/Cambria.eot') format('embedded-opentype'), url('../fonts/Cambria/fonts/Cambria.woff2') format('woff2'), url('../fonts/Cambria/fonts/Cambria.woff') format('woff'), url('../fonts/Cambria/fonts/Cambria.ttf') format('truetype'), url('../fonts/Cambria/fonts/Cambria.svg#Cambria') format('svg');
+}
+
+@font-face {
+    font-family: 'Cambria-Bold';
+    src: url('../fonts/Cambria-Bold/Cambria-Bold.eot') format('embedded-opentype'), url('../fonts/Cambria-Bold/Cambria-Bold.woff') format('woff'), url('../fonts/Cambria-Bold/Cambria-Bold.ttf') format('truetype'), url('../fonts/Cambria-Bold/Cambria-Bold.svg#Cambria-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+address,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'RubikRegular';
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.flex {
+    display: flex;
+}
+
+.phone-icon {}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+i.fas {
+    padding: 5px;
+    border-radius: 50%;
+    background: #fff;
+    margin-right: 14px;
+    color: #297ab8;
+    font-size: 14px;
+}
+
+.header-top {
+    background: linear-gradient(42deg, #297ab8, #6252d0);
+}
+
+header a {
+    color: #fefefe;
+    font-size: 18px;
+}
+
+header a:hover {
+    text-decoration: none;
+    color: pink;
+}
+
+header .header-flex {
+    height: 76px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a.phone-icon {
+    margin-right: 37px;
+}
+
+header .social-icons a {
+    margin-right: 20px;
+}
+
+.main-menu {
+    position: relative;
+    background: #fff;
+    padding: 51.5px 0px;
+    height: 130px;
+    z-index: 1;
+    width: 100%;
+}
+
+.main-menu a {
+    color: #000;
+    font-family: 'Cambria';
+    font-size: 18px;
+    margin-right: 40px;
+}
+
+.main-menu .logo {
+    width: 100%;
+    /* display: block; */
+    flex: 2;
+    position: relative;
+}
+
+.logo img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.main-menu .menu {
+    display: flex;
+    justify-content: flex-end;
+    flex: 10;
+    align-items: center;
+}
+
+section.banner {
+    height: 800px;
+    position: relative;
+    background: url('../images/banner-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section.banner .banner-bottom .banner-btn {
+    font-family: Cambria-Bold;
+}
+
+section.banner img {
+    /* width: 100%;
+    height: 800px; */
+}
+
+section.banner .banner-bottom {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 60px;
+    left: 0%;
+    right: 0%;
+}
+
+section.banner .banner-title {
+    margin-right: 170px
+}
+
+section.banner .banner-bottom h1 {
+    color: #0054a3;
+    font-size: 36px;
+    font-family: 'RubikMedium';
+    line-height: 30px;
+}
+
+section.banner .banner-bottom p {
+    font-size: 20px;
+    color: #393939;
+    margin-bottom: 0px;
+}
+
+section.banner button.get-approve {
+    background: linear-gradient(90deg, #297ab8, #6252d0);
+    border-radius: 50px;
+    border: none;
+    padding: 15px 63px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+
+#six {
+    position: relative;
+    transition-duration: 0.4s;
+}
+
+#six:after {
+    content: '';
+    position: absolute;
+    background: blueviolet;
+    width: 1%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: cubic-bezier(0.895, 0.03, 0.685);
+    transition-duration: 0.4s;
+    z-index: -1;
+}
+
+#six:hover {
+    color: white;
+}
+
+#six:hover::after {
+    width: 100%;
+}
+
+
+/* banner section end */
+
+
+/* funding secction start */
+
+section.funding {
+    display: flex;
+    padding: 94px 0px;
+    align-items: center;
+}
+
+section.funding .funding-heading {
+    max-width: 285px;
+    flex: 1;
+}
+
+section.funding .funding-heading h3 {
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #5a5a5a;
+    padding-right: 55px;
+    line-height: 38px;
+}
+
+section.funding .funding-text {
+    flex: 1;
+}
+
+.funding-text p {
+    font-size: 16px;
+    color: #858585;
+    line-height: 28px;
+}
+
+section.offer {
+    background: #f7f9fb;
+    padding-top: 97px;
+}
+
+section.offer .offer-heading-text {
+    text-align: center;
+}
+
+section.offer .offer-heading-text h1 {
+    font-family: Cambria-Bold;
+    font-size: 32px;
+    color: #5a5a5a;
+    line-height: 46px;
+}
+
+section.offer .offer-heading-text p {
+    max-width: 565px;
+    text-align: center;
+    margin: auto;
+    color: #858585;
+    line-height: 26px;
+    font-size: 16px;
+}
+
+section.offer .all-offers {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 96px;
+}
+
+section.offer .all-offers .icons img {
+    margin-right: 16px;
+}
+
+section.offer .all-offers .single-offer {
+    display: flex;
+    flex-basis: 33.333333%;
+}
+
+section.offer .all-offers .offer-details h1 {
+    font-size: 22px;
+    line-height: 38px;
+    color: #646464;
+    font-family: 'RubikMedium';
+}
+
+section.offer .all-offers .offer-details p {
+    padding-bottom: 40px;
+    max-width: 285px;
+    color: #929292;
+    line-height: 28px;
+}
+
+
+/* end offer section */
+
+
+/* have-question section start */
+
+section.have-question {
+    background: url(../images/have-question-bg.jpg);
+    color: white;
+    min-height: 261px;
+    align-items: center;
+    display: flex;
+    background-size: auto 100%;
+    /* background-attachment: fixed; */
+}
+
+section.have-question .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.have-question .question-text {
+    flex-basis: 645px;
+}
+
+button.question-btn {
+    background: transparent;
+    width: 270px;
+    height: 64px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Cambria';
+    font-weight: bold;
+}
+
+.question-text h2,
+.question-button {
+    font-family: 'Cambria-Bold';
+}
+
+.question-text h2 {
+    margin-bottom: 27px;
+}
+
+section.vehicle {
+    min-height: 565px;
+}
+
+section.vehicle h5 {
+    font-size: 22px;
+    line-height: 34px;
+    text-align: center;
+    color: #5a5a5a;
+    max-width: 693px;
+    margin: 98px auto 78px;
+    font-family: 'Cambria-Bold';
+}
+
+.vehicle-container {
+    /* padding-bottom: 125px; */
+    display: flex;
+    align-items: center;
+}
+
+.single-vehicle {
+    flex-basis: 25%;
+}
+
+.single-vehicle h6 {
+    text-transform: uppercase;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -48px;
+    z-index: 1;
+    position: relative;
+    color: #fff;
+    margin-right: 15px;
+    background: linear-gradient(42deg, #297ab8, #6252d0);
+}
+
+
+/* review section start */
+
+section.review {
+    background: #f7f9fb;
+}
+
+section.review .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 370px;
+}
+
+section.review .review-text {
+    max-width: 560px;
+    font-size: 18px;
+    line-height: 34px;
+    color: #6b6b6b;
+    display: flex;
+    flex-direction: column;
+    font-family: Cambria;
+}
+
+strong {
+    font-size: 22px;
+    color: #003471;
+    line-height: 34px;
+    font-family: Cambria-Bold;
+    margin-top: 49px;
+}
+
+
+/* end review section */
+
+
+/* start business trailer section */
+
+section.business-trailer {
+    display: flex;
+    align-items: center;
+    min-height: 440px;
+}
+
+section.business-trailer .trailer-big {}
+
+section.business-trailer img {}
+
+section.business-trailer h5 {
+    font-family: 'Cambria-Bold';
+    font-size: 28px;
+    line-height: 38px;
+    color: #5a5a5a;
+    margin-bottom: 52px;
+}
+
+section.business-trailer p.agreement-text {
+    margin-bottom: 44px;
+}
+
+section.business-trailer p {
+    color: #858585;
+    font-size: 16px;
+}
+
+
+/* end business trainler section */
+
+
+/* start contact section */
+
+
+/* contact section inherited from question section */
+
+section.have-question.contact {
+    min-height: 371px;
+}
+
+section.contact p.text-head {
+    margin-bottom: 40px;
+    margin-top: 27px;
+}
+
+
+/* end contact section */
+
+
+/* start how to apply section */
+
+section.how-to-apply {
+    min-height: 555px
+}
+
+section.how-to-apply .apply-text {
+    text-align: center;
+}
+
+section.how-to-apply h1 {
+    margin: 39px 0;
+    font-family: 'Cambria-Bold';
+    font-size: 32px;
+    line-height: 46px;
+    color: #5a5a5a;
+}
+
+section.how-to-apply .apply-text>p {
+    max-width: 950px;
+    margin: 0 auto 74px;
+    text-align: left;
+    line-height: 26px;
+    color: #858585;
+    font-size: 16px;
+}
+
+section.how-to-apply .apply-options {
+    display: flex;
+}
+
+section.how-to-apply .apply-options>* {
+    margin-right: 30px;
+}
+
+section.how-to-apply .apply-options .options {
+    flex: 1 1 33.3333%;
+    background: #f2f5f8;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 163px;
+}
+
+section.how-to-apply .option-text h3 {
+    color: #5a5a5a;
+    font-size: 20px;
+    line-height: 32px;
+    font-family: 'RubikMedium';
+}
+
+section.how-to-apply .option-text p {
+    font-size: 16px;
+    line-height: 32px;
+    color: #858585;
+}
+
+section.how-to-apply .option-text {
+    margin-left: 25px;
+}
+
+
+/* how to apply section end */
+
+
+/* industry-attention section start */
+
+section.industry-attention {
+    background: #fbfcfd;
+    min-height: 405px;
+}
+
+.industry-attention-container {
+    justify-content: center;
+}
+
+.industry,
+.attention {
+    flex-basis: 560px;
+}
+
+section.industry-attention h2 {
+    font-family: 'Cambria-Bold';
+    font-size: 24px;
+    color: #5a5a5a;
+    line-height: 46px;
+    margin-bottom: 34px;
+    margin-top: 68px;
+}
+
+section.industry-attention p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #858585;
+}
+
+section.industry-attention p.attention-text-top {
+    margin-bottom: 40px;
+    ;
+}
+
+
+/* end .industry-attention-container section */
+
+
+/* start how-we-roll section */
+
+section.how-we-roll {
+    display: flex;
+    align-items: center;
+    min-height: 440px;
+    justify-content: space-between;
+}
+
+section.how-we-roll h3 {
+    font-family: 'Cambria-Bold';
+    font-size: 24px;
+    color: #5a5a5a;
+    line-height: 46px;
+    margin-bottom: 37px;
+}
+
+section.how-we-roll p {
+    max-width: 665px;
+    color: #858585;
+    line-height: 26px;
+}
+
+section.how-we-roll .roll-image {}
+
+section.how-we-roll img {}
+
+
+/* end how-we-roll section */
+
+
+/* rock-industry-blue section start */
+
+section.rock-industry-blue {
+    min-height: 370px;
+}
+
+section.rock-industry-blue h2 {
+    margin-bottom: 44px;
+    font-family: 'Cambria-Bold';
+    line-height: 38px;
+    font-size: 30px;
+}
+
+section.rock-industry-blue p {
+    max-width: 645px;
+    font-size: 17px;
+    line-height: 28px;
+    color: #d7d7d7;
+}
+
+section.rock-industry-blue ul {
+    list-style: none;
+}
+
+section.rock-industry-blue li {
+    font-family: 'Cambria';
+    font-size: 22px;
+    line-height: 38px;
+}
+
+section.rock-industry-blue li .tick {
+    margin-right: 14px;
+}
+
+section.rock-industry-blue {}
+
+section.companys {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 300px;
+}
+
+
+/* end company section */
+
+
+/* start footer contact section */
+
+section.footer-contact {
+    min-height: 202px;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    background: linear-gradient(145deg, #297ab8, #6252d0);
+}
+
+.container.flex.footer-flex>* {
+    flex: 1 1 33.33333%;
+}
+
+p.m-23,
+address.m-23 {
+    margin-bottom: 23px;
+}
+
+footer.footer {
+    min-height: 86px;
+    background: #1d1d1d;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+footer.footer p {
+    font-size: 18px;
+    line-height: 40.3px;
+    color: #999999;
+}
+
+.fixed-menu {
+    position: fixed;
+    top: 0%;
+    transition: all 1s ease-in-out;
+}
